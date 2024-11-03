@@ -5,18 +5,14 @@ import { OrbitControls, Sphere } from "@react-three/drei";
 import * as THREE from "three";
 import EarthTexture from "./textures/EarthTexture.jpg";
 
-function Earth() {
+function Earth({ texture }) {
   const earthRef = useRef();
 
-  // Animowanie rotacji Ziemi
   useFrame(() => {
     if (earthRef.current) {
-      earthRef.current.rotation.y += 0.001; // Stały obrót Ziemi
+      earthRef.current.rotation.y += 0.001;
     }
   });
-
-  // Ładowanie tekstury
-  const texture = new THREE.TextureLoader().load(EarthTexture);
 
   return (
     <Sphere ref={earthRef} args={[1, 32, 32]}>
@@ -26,27 +22,16 @@ function Earth() {
 }
 
 const Globe = () => {
-  const earthRef = useRef();
-
-  useFrame(({ mouse }) => {
-    if (earthRef.current) {
-      earthRef.current.rotation.y += 0.001;
-    }
-  });
-
   const texture = new THREE.TextureLoader().load(EarthTexture);
 
   return (
     <Canvas style={{ width: "100%", height: "100vh" }}>
       <ambientLight intensity={0.3} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
-      <Earth />
-      <Sphere ref={useRef} args={[1, 32, 32]}>
-        <meshStandardMaterial map={texture} attach="material" />
-      </Sphere>
-
+      <Earth texture={texture} />
       <OrbitControls enableZoom={false} enablePan={false} />
     </Canvas>
   );
 };
+
 export default Globe;
