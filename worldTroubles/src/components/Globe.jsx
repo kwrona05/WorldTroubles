@@ -1,15 +1,31 @@
 /* eslint-disable react/no-unknown-property */
-import { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Points, Sphere } from "@react-three/drei";
+import { useRef, useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere, Html } from "@react-three/drei";
 import * as THREE from "three";
 import EarthTexture from "./textures/EarthTexture.jpg";
 
-const EarthPoint = ({ position }) => {
+const GlobePoint = ({ position, label }) => {
+  const [hovered, setHovered] = useState(false);
+
+  const handleClick = () => {
+    alert(`Kliknięto punkt: ${label}`);
+  };
+
   return (
-    <mesh position={position}>
-      <sphereGeometry arg={[0.05, 8, 8]} />
-      <meshStandardMaterial color="red" />
+    <mesh
+      position={position}
+      onClick={handleClick}
+      onPointerOver={() => setHovered(true)}
+      onPointerOut={() => setHovered(false)}
+    >
+      <sphereGeometry args={[0.08, 8, 8]} />
+      <meshStandardMaterial color={hovered ? "yellow" : "white"} />
+      {hovered && (
+        <Html>
+          <div className="label-div">{label}</div>
+        </Html>
+      )}
     </mesh>
   );
 };
@@ -17,23 +33,17 @@ const EarthPoint = ({ position }) => {
 function Earth({ texture, points }) {
   const earthRef = useRef();
 
-  useFrame(() => {
-    if (earthRef.current) {
-      earthRef.current.rotation.y += 0.001;
-    }
-  });
-
   return (
-    <Sphere ref={earthRef} args={[2, 32, 32]}>
+    <Sphere ref={earthRef} args={[3, 32, 32]}>
       <meshStandardMaterial map={texture} attach="material" />
       {points.map((point, index) => (
-        <EarthPoint key={index} position={point} />
+        <GlobePoint key={index} position={point.position} label={point.label} />
       ))}
     </Sphere>
   );
 }
 
-const SphericalToCertasian = (lat, lon, radius) => {
+const SphericalToCartesian = (lat, lon, radius) => {
   const phi = (90 - lat) * (Math.PI / 180);
   const theta = (lon + 180) * (Math.PI / 180);
 
@@ -48,23 +58,37 @@ const Globe = () => {
   const texture = new THREE.TextureLoader().load(EarthTexture);
 
   const pointsData = [
-    { lat: -75, lon: 0 } /*Dziura ozonowa*/,
-    { lat: 49, lon: 32 } /*Ukraina*/,
+    { lat: -75, lon: 0, label: "Dziura ozonowa" },
+    { lat: 49, lon: 32, label: "Ukraina" },
+    { lat: -3.5, lon: -62.2, label: "Amazonia- deforestacja" },
+    { lat: -33.9, lon: 18.4, label: "Kapsztad, RPA- kryzys wody" },
+    {
+      lat: 39.9,
+      lon: 116.4,
+      label: "Pekin, Chiny- zanieczyszczenia powietrza",
+    },
+    { lat: 34.8, lon: 39, label: "Syria- konflikt zbrojny" },
+    {
+      lat: 23.7,
+      lon: 90.4,
+      label: "Bangladesz- problemy z dostępem do czystej wody",
+    },
   ];
 
-  const points = pointsData.map(({ lat, lon }) =>
-    SphericalToCertasian(lat, lon, 1.05)
-  );
+  const points = pointsData.map(({ lat, lon, label }) => ({
+    position: SphericalToCartesian(lat, lon, 3),
+    label,
+  }));
 
   return (
     <Canvas
-      style={{ width: "100%", height: "100vh" }}
-      camera={{ position: [0, 0, 100] }}
+      style={{ width: "100vh", height: "100vh" }}
+      camera={{ position: [0, 0, 6] }}
     >
-      <ambientLight intensity={0.3} />
-      <directionalLight position={[5, 5, 5]} intensity={1} />
+      <ambientLight intensity={1.0} />
+      <directionalLight position={[5, 5, 5]} intensity={0.5} />
       <Earth texture={texture} points={points} />
-      <OrbitControls minDistance={4} maxDistance={8} enablePan={false} />
+      <OrbitControls minDistance={5} maxDistance={15} enablePan={false} />
     </Canvas>
   );
 };
