@@ -7,3 +7,10 @@
     align-items: center;
     justify-content: center;
 }
+
+.label-div {
+            color: white;
+              background-color: black;
+              padding: 2px;
+              border-radius: 4px;
+}
