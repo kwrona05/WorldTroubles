@@ -73,6 +73,7 @@ const Globe = () => {
       lon: 90.4,
       label: "Bangladesz- problemy z dostępem do czystej wody",
     },
+    { lat: 39.47, lon: -0.38, label: "Walencja- powódź" },
   ];
 
   const points = pointsData.map(({ lat, lon, label }) => ({
