@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import About from "./menu-components.jsx/About";
 
 const MenuButton = styled.button`
   padding: 10px 20px;
@@ -59,7 +60,7 @@ const MenuApp = () => {
         {isOpen ? "Close menu" : "Open menu"}
       </MenuButton>
       <Sidebar isOpen={isOpen}>
-        <MenuItem>Option1</MenuItem>
+        <About />
         <MenuItem>Option2</MenuItem>
         <MenuItem>Option3</MenuItem>
       </Sidebar>
