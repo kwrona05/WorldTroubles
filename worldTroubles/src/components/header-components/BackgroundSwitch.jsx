@@ -1,19 +1,22 @@
 import { useState } from "react";
-import styled, { keyframes, ThemeProvider } from "styled-components";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 
-const backgroundChange = keyframes`
-0% {opacity: 0; }
-100% {opacity: 1;}`;
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: ${(props) => props.theme.backgroundColor};
+    color: ${(props) => props.theme.textColor};
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+`;
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(${(props) => props.theme.backgroundImage});
-  background-size: cover;
-  background-position: center;
-  animation: ${backgroundChange} 0.5s ease-in-out;
 `;
 
 const Switch = styled.div`
@@ -38,11 +41,13 @@ const Switch = styled.div`
 `;
 
 const lightTheme = {
-  backgroundImage: "", //link do zdjęcia ze słońcem
+  backgroundColor: "#f0f0f0",
+  textColor: "#000000",
 };
 
 const darkTheme = {
-  backgroundImage: "", //link do zdjęcia kosmosu
+  backgroundColor: "#2c2c2c",
+  textColor: "#ffffff",
 };
 
 const ToggleSwitch = () => {
@@ -51,6 +56,7 @@ const ToggleSwitch = () => {
 
   return (
     <ThemeProvider theme={isOn ? darkTheme : lightTheme}>
+      <GlobalStyle />
       <Container>
         <Switch isOn={isOn} onClick={toggleTheme} />
       </Container>
