@@ -4,7 +4,7 @@ const AppHeader = () => {
   return (
     <div className="app-header">
       <MenuApp />
-      <h1>{/*Tytuł strony*/}</h1>
+      <h1>Beyond Border</h1>
       <ToggleSwitch />
     </div>
   );
