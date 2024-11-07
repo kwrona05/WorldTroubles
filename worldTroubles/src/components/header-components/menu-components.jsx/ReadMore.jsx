@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ReadButton = styled.button`
   padding: 10px 20px;
@@ -53,6 +54,16 @@ const CountryItem = styled.li`
   }
 `;
 
+const StyledLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    color: inherit;
+  }
+`;
+
 const ReadMore = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleReadMore = () => {
@@ -65,9 +76,32 @@ const ReadMore = () => {
       {isOpen && (
         <DetailMenu>
           <IssuesList>
-            <CountryItem>Konflikt na ukrainie</CountryItem>
-            <CountryItem>Przerazające powodzie w Walencji</CountryItem>
-            <CountryItem>Problemy z czystą wodą</CountryItem>
+            <CountryItem>
+              <StyledLink to="/ukraine">Konflikt na ukrainie</StyledLink>
+            </CountryItem>
+            <CountryItem>
+              <StyledLink to="/spain">
+                Przerazające powodzie w Walencji
+              </StyledLink>
+            </CountryItem>
+            <CountryItem>
+              <StyledLink to="/bangladesh">Problemy z czystą wodą</StyledLink>
+            </CountryItem>
+            <CountryItem>
+              <StyledLink to="/rpa">Kryzys wody</StyledLink>
+            </CountryItem>
+            <CountryItem>
+              <StyledLink to="/amazonia">Amazonia</StyledLink>
+            </CountryItem>
+            <CountryItem>
+              <StyledLink to="/syria">Syria</StyledLink>
+            </CountryItem>
+            <CountryItem>
+              <StyledLink to="/ozonehole">Ozone Hole</StyledLink>
+            </CountryItem>
+            <CountryItem>
+              <StyledLink to="/pekin">Pekin</StyledLink>
+            </CountryItem>
           </IssuesList>
         </DetailMenu>
       )}
