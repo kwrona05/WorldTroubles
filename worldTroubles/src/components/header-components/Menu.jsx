@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import About from "./menu-components.jsx/About";
 import ReadMore from "./menu-components.jsx/ReadMore";
+import OtherIssues from "./menu-components.jsx/OtherIssues";
 
 const MenuButton = styled.button`
   padding: 10px 20px;
@@ -20,7 +21,7 @@ const MenuButton = styled.button`
 
 const Sidebar = styled.div`
   position: fixed;
-  top: 0;
+  top: 80px;
   left: 0;
   height: 90vh;
   width: 250px;
@@ -28,25 +29,13 @@ const Sidebar = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
   padding-left: 20px;
-  top: 80px;
   transform: ${(props) =>
     props.isOpen ? "translateX(0)" : "translateX(-100%)"};
   transition: transform 0.3s ease;
   z-index: 1;
-`;
-
-const MenuItem = styled.div`
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-
-  &:hover {
-    background-color: #eee;
-  }
 `;
 
 const MenuApp = () => {
@@ -64,7 +53,7 @@ const MenuApp = () => {
       <Sidebar isOpen={isOpen}>
         <About />
         <ReadMore />
-        <MenuItem>Option3</MenuItem>
+        <OtherIssues />
       </Sidebar>
     </div>
   );
