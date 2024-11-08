@@ -11,6 +11,7 @@ const ReadButton = styled.button`
   border: none;
   border-radius: 4px;
   transition: background-color 0.3s;
+  width: 135px;
 
   &:hover {
     background-color: #0056b3;
@@ -18,8 +19,11 @@ const ReadButton = styled.button`
 `;
 
 const DetailMenu = styled.div`
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 10px;
+  z-index: 1000;
 `;
 
 const IssuesList = styled.ul`
@@ -71,7 +75,7 @@ const ReadMore = () => {
   };
 
   return (
-    <div className="read-more">
+    <div className="read-more" style={{ position: "relative" }}>
       <ReadButton onClick={toggleReadMore}>Read more</ReadButton>
       {isOpen && (
         <DetailMenu>
