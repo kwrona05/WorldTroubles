@@ -6,7 +6,6 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const AboutButton = styled.button`
   padding: 10px 20px;
@@ -17,6 +16,7 @@ const AboutButton = styled.button`
   border: none;
   border-radius: 4px;
   transition: background-color 0.3s;
+  width: 135px;
 
   &:hover {
     background-color: #0056b3;
@@ -24,8 +24,11 @@ const AboutButton = styled.button`
 `;
 
 const SocialMediaMenu = styled.div`
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 10px;
+  z-index: 1000;
 `;
 
 const AboutList = styled.ul`
@@ -74,7 +77,7 @@ const About = () => {
   };
 
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <AboutButton onClick={toggleAbout}>Who am I</AboutButton>
       {isOpen && (
         <SocialMediaMenu>
