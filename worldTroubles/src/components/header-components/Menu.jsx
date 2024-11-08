@@ -31,11 +31,11 @@ const Sidebar = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 20px;
-  padding-left: 20px;
   transform: ${(props) =>
     props.isOpen ? "translateX(0)" : "translateX(-100%)"};
   transition: transform 0.3s ease;
   z-index: 1;
+  gap: 10px;
 `;
 
 const MenuApp = () => {
