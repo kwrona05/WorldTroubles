@@ -58,22 +58,30 @@ const Globe = () => {
   const texture = new THREE.TextureLoader().load(EarthTexture);
 
   const pointsData = [
-    { lat: -75, lon: 0, label: "Dziura ozonowa" },
-    { lat: 49, lon: 32, label: "Ukraina" },
-    { lat: -3.5, lon: -62.2, label: "Amazonia- deforestacja" },
-    { lat: -33.9, lon: 18.4, label: "Kapsztad, RPA- kryzys wody" },
+    { lat: -75, lon: 0, label: "Ozone Hole" },
+    { lat: 49, lon: 32, label: "War in Ukraine" },
+    {
+      lat: -3.5,
+      lon: -62.2,
+      label: "Amazonia- lungs of the Earth",
+    },
+    {
+      lat: -33.9,
+      lon: 18.4,
+      label: "South Africa- Water crysis!",
+    },
     {
       lat: 39.9,
       lon: 116.4,
-      label: "Pekin, Chiny- zanieczyszczenia powietrza",
+      label: "Pekin- No fresh air",
     },
-    { lat: 34.8, lon: 39, label: "Syria- konflikt zbrojny" },
+    { lat: 34.8, lon: 39, label: "Civil War- How much longer?" },
     {
       lat: 23.7,
       lon: 90.4,
-      label: "Bangladesz- problemy z dostępem do czystej wody",
+      label: "Bangladesh- No clear water",
     },
-    { lat: 39.47, lon: -0.38, label: "Walencja- powódź" },
+    { lat: 39.47, lon: -0.38, label: "Valencia- Terrible floods" },
   ];
 
   const points = pointsData.map(({ lat, lon, label }) => ({
