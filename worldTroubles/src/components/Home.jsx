@@ -7,8 +7,8 @@ const Home = () => {
     <div className="app-container">
       <AppHeader />
       <div className="content-container">
-        <Globe />
         <Information />
+        <Globe />
       </div>
     </div>
   );
