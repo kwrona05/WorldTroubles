@@ -18,8 +18,11 @@ const OtherButton = styled.button`
 `;
 
 const OtherMenu = styled.div`
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  z-index: 1000;
 `;
 
 const OtherList = styled.ul`
@@ -71,7 +74,7 @@ const OtherIssues = () => {
   };
 
   return (
-    <div className="other-container">
+    <div className="other-container" style={{ position: "relative" }}>
       <OtherButton onClick={toggleOther}>Other Issues</OtherButton>
       {isOpen && (
         <OtherMenu>
