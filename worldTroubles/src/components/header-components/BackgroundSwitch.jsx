@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import { backgroundBlurriness } from "three/webgpu";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -41,12 +42,14 @@ const Switch = styled.div`
 `;
 
 const lightTheme = {
-  backgroundColor: "#f0f0f0",
-  textColor: "#000000",
+  backgroundColor: "linear-gradient(to bottom, #3a3a3a, #12121212",
+  textColor: "#ffffff",
 };
 
 const darkTheme = {
-  backgroundColor: "#2c2c2c",
+  backgroundColor:
+    "url('https://www.transparenttextures.com/patterns/stars.png')", // Starry background
+  backgroundSize: "cover",
   textColor: "#ffffff",
 };
 
