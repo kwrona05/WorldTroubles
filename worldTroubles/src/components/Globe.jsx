@@ -8,19 +8,14 @@ import EarthTexture from "./textures/EarthTexture.jpg";
 const GlobePoint = ({ position, label }) => {
   const [hovered, setHovered] = useState(false);
 
-  const handleClick = () => {
-    alert(`Kliknięto punkt: ${label}`);
-  };
-
   return (
     <mesh
       position={position}
-      onClick={handleClick}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
     >
       <sphereGeometry args={[0.08, 8, 8]} />
-      <meshStandardMaterial color={hovered ? "yellow" : "white"} />
+      <meshStandardMaterial color={hovered ? "white" : "red"} />
       {hovered && (
         <Html>
           <div className="label-div">{label}</div>
