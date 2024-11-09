@@ -78,7 +78,7 @@ const About = () => {
 
   return (
     <div style={{ position: "relative" }}>
-      <AboutButton onClick={toggleAbout}>Who am I</AboutButton>
+      <AboutButton onClick={toggleAbout}>About me</AboutButton>
       {isOpen && (
         <SocialMediaMenu>
           <AboutList>
