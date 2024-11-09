@@ -1,5 +1,11 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Użyj BrowserRouter zamiast Router
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
+import { useRef, useState } from "react";
 import Home from "./components/Home";
 import Ukraine from "./components/header-components/global-issues/Ukraine";
 import Spain from "./components/header-components/global-issues/Spain";
@@ -16,13 +22,46 @@ import Hunger from "./components/header-components/other-issues/Hunger";
 import Education from "./components/header-components/other-issues/Education";
 import HealthCare from "./components/header-components/other-issues/HealthCare";
 import Poverty from "./components/header-components/other-issues/Poverty";
+import MainApp from "./components/Main";
+import WelcomeScreen from "./components/Welcome";
 
 const App = () => {
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true }}>
+      <AppContent />
+    </Router>
+  );
+};
+
+const AppContent = () => {
+  const audioRef = useRef(null);
+  const navigate = useNavigate();
+  const [audioPlayed, setAudioPlayed] = useState(false);
+
+  const handleStart = () => {
+    audioRef.current.play().catch((error) => {
+      console.error("Error during playing audio", error);
+      alert("Sorry, the audio couldn't be played. Please try again.");
+    });
+    setAudioPlayed(true);
+
+    navigate("/main");
+  };
+
+  return (
+    <>
+      <audio
+        ref={audioRef}
+        src="/intro.mp3"
+        loop
+        preload="auto"
+        style={{ display: "none" }}
+      />
+
       <Routes>
-        {/*Routes to global issues*/}
-        <Route path="/" element={<Home />} />
+        <Route path="/main" element={<MainApp />} />
+        <Route path="/" element={<WelcomeScreen onStart={handleStart} />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/ukraine" element={<Ukraine />} />
         <Route path="/spain" element={<Spain />} />
         <Route path="/bangladesh" element={<Bangladesh />} />
@@ -31,7 +70,6 @@ const App = () => {
         <Route path="/pekin" element={<Pekin />} />
         <Route path="/syria" element={<Syria />} />
         <Route path="/amazonia" element={<Amazonia />} />
-        {/*Routes to humans issues*/}
         <Route path="/obesity" element={<Obesity />} />
         <Route path="/addictions" element={<Addictions />} />
         <Route path="/depression" element={<Depression />} />
@@ -40,7 +78,7 @@ const App = () => {
         <Route path="/healthcare" element={<HealthCare />} />
         <Route path="/poverty" element={<Poverty />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 
