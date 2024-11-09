@@ -1,6 +1,9 @@
+import BackHome from "../../BackHome";
+
 const OzoneHole = () => {
   return (
     <div className="detail-container">
+      <BackHome />
       <h2>The weakest point of the earth</h2>
       <div className="description">
         <p>

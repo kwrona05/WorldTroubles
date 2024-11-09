@@ -1,7 +1,10 @@
+import BackHome from "../../BackHome";
+
 const Ukraine = () => {
   return (
     <div className="detail-container">
-      <h2>War on Ukraine</h2>
+      <BackHome />
+      <h2>War in Ukraine</h2>
       <div className="description">
         <p>
           The war in Ukraine began in February 2022, when Russia launched a

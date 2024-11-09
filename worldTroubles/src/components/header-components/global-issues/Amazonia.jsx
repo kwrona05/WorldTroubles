@@ -1,6 +1,9 @@
+import BackHome from "../../BackHome";
+
 const Amazonia = () => {
   return (
     <div className="detail-container">
+      <BackHome />
       <h2>An attack on the lungs of the Earth</h2>
       <div className="description">
         <p>

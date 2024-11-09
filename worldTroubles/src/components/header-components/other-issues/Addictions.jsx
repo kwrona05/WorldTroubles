@@ -1,6 +1,9 @@
+import BackHome from "../../BackHome";
+
 const Addictions = () => {
   return (
     <div className="detail-container">
+      <BackHome />
       <h2>Addictions</h2>
       <div className="description">
         <p>

@@ -1,6 +1,9 @@
+import BackHome from "../../BackHome";
+
 const Spain = () => {
   return (
     <div className="detail-container">
+      <BackHome />
       <h2>Horror in Valencia</h2>
       <div className="description">
         <p>

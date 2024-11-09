@@ -1,6 +1,9 @@
+import BackHome from "../../BackHome";
+
 const Depression = () => {
   return (
     <div className="detail-container">
+      <BackHome />
       <h2>Depression</h2>
       <div className="description">
         <p>

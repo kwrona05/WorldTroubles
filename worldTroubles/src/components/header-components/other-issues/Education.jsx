@@ -1,6 +1,9 @@
+import BackHome from "../../BackHome";
+
 const Education = () => {
   return (
     <div className="detail-container">
+      <BackHome />
       <h2>Education</h2>
       <div className="description">
         <p>

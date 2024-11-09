@@ -1,6 +1,9 @@
+import BackHome from "../../BackHome";
+
 const Pekin = () => {
   return (
     <div className="detail-container">
+      <BackHome />
       <h2>Invisible poison</h2>
       <div className="description">
         <p>

@@ -1,6 +1,9 @@
+import BackHome from "../../BackHome";
+
 const HealthCare = () => {
   return (
     <div className="detail-container">
+      <BackHome />
       <h2>Healthcare</h2>
       <div className="description">
         <p>
