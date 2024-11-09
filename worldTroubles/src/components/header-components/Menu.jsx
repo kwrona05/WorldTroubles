@@ -13,6 +13,7 @@ const MenuButton = styled.button`
   border: none;
   border-radius: 4px;
   transition: background-color 0.3s;
+  margin-top: 15px;
 
   &:hover {
     background-color: #0056b3;
@@ -21,7 +22,7 @@ const MenuButton = styled.button`
 
 const Sidebar = styled.div`
   position: fixed;
-  top: 80px;
+  top: 50px;
   left: 0;
   height: 90vh;
   width: 250px;
