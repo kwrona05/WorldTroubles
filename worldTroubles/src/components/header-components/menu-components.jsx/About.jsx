@@ -93,7 +93,7 @@ const About = () => {
             </ListItem>
             <ListItem>
               <a
-                href="https://www.linkedin.com"
+                href="www.linkedin.com/in/kacper-wrona-842b662bb"
                 target="_blank"
                 rel="noopener noreferrer"
               >
