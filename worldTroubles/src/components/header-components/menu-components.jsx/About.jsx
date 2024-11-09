@@ -102,7 +102,7 @@ const About = () => {
             </ListItem>
             <ListItem>
               <a
-                href="https://www.github.com"
+                href="https://github.com/kwrona05"
                 target="_blank"
                 rel="noopener noreferrer"
               >
