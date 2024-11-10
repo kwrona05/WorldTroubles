@@ -4,15 +4,23 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, Html } from "@react-three/drei";
 import * as THREE from "three";
 import EarthTexture from "./textures/EarthTexture.jpg";
+import { useNavigate } from "react-router-dom";
 
-const GlobePoint = ({ position, label }) => {
+const GlobePoint = ({ position, label, path }) => {
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
+  const handleClick = () => {
+    if (path) {
+      navigate(path);
+    }
+  };
 
   return (
     <mesh
       position={position}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
+      onClick={handleClick}
     >
       <sphereGeometry args={[0.08, 8, 8]} />
       <meshStandardMaterial color={hovered ? "white" : "red"} />
@@ -32,7 +40,12 @@ function Earth({ texture, points }) {
     <Sphere ref={earthRef} args={[3, 32, 32]}>
       <meshStandardMaterial map={texture} attach="material" />
       {points.map((point, index) => (
-        <GlobePoint key={index} position={point.position} label={point.label} />
+        <GlobePoint
+          key={index}
+          position={point.position}
+          label={point.label}
+          path={point.path}
+        />
       ))}
     </Sphere>
   );
@@ -53,35 +66,50 @@ const Globe = () => {
   const texture = new THREE.TextureLoader().load(EarthTexture);
 
   const pointsData = [
-    { lat: -75, lon: 0, label: "Ozone Hole" },
-    { lat: 49, lon: 32, label: "War in Ukraine" },
+    { lat: -75, lon: 0, label: "Ozone Hole", path: "/ozonehole" },
+    { lat: 49, lon: 32, label: "War in Ukraine", path: "/ukraine" },
     {
       lat: -3.5,
       lon: -62.2,
       label: "Amazonia- lungs of the Earth",
+      path: "/amazonia",
     },
     {
       lat: -33.9,
       lon: 18.4,
       label: "South Africa- Water crysis!",
+      path: "/rpa",
     },
     {
       lat: 39.9,
       lon: 116.4,
       label: "Pekin- No fresh air",
+      path: "/pekin",
     },
-    { lat: 34.8, lon: 39, label: "Civil War- How much longer?" },
+    {
+      lat: 34.8,
+      lon: 39,
+      label: "Civil War- How much longer?",
+      path: "/syria",
+    },
     {
       lat: 23.7,
       lon: 90.4,
       label: "Bangladesh- No clear water",
+      path: "/bangladesh",
     },
-    { lat: 39.47, lon: -0.38, label: "Valencia- Terrible floods" },
+    {
+      lat: 39.47,
+      lon: -0.38,
+      label: "Valencia- Terrible floods",
+      path: "/spain",
+    },
   ];
 
-  const points = pointsData.map(({ lat, lon, label }) => ({
+  const points = pointsData.map(({ lat, lon, label, path }) => ({
     position: SphericalToCartesian(lat, lon, 3),
     label,
+    path,
   }));
 
   return (
