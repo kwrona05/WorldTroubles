@@ -57,7 +57,6 @@ const AppContent = () => {
         preload="auto"
         style={{ display: "none" }}
       />
-
       <Routes>
         <Route path="/main" element={<MainApp />} />
         <Route path="/" element={<WelcomeScreen onStart={handleStart} />} />
