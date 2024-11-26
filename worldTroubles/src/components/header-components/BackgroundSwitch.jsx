@@ -1,6 +1,5 @@
 import { useState } from "react";
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import { backgroundBlurriness } from "three/webgpu";
+import styled, { ThemeProvider } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -48,7 +47,7 @@ const lightTheme = {
 
 const darkTheme = {
   backgroundColor:
-    "url('https://www.transparenttextures.com/patterns/stars.png')", // Starry background
+    "url('https://www.transparenttextures.com/patterns/stars.png')",
   backgroundSize: "cover",
   textColor: "#ffffff",
 };
