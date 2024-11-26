@@ -1,6 +1,6 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
-const Intro = () => {
+const Intro = ({ onFinish }) => {
   const items = [
     "Hunger, addictions, depression, wars, natural disasters, poverty...",
     "Almost all of us have heard about these problems, but are we aware of the biggest problem of the 21st century?",
@@ -11,13 +11,22 @@ const Intro = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 5000);
+  const showNextSentence = (index) => {
+    if (index < items.length - 1) {
+      setTimeout(() => {
+        setCurrentIndex(index + 1);
+        showNextSentence(index + 1);
+      }, 5000);
+    } else {
+      setTimeout(() => {
+        onFinish();
+      }, 5000);
+    }
+  };
 
-    return () => clearInterval(interval);
-  }, [items.length]);
+  useEffect(() => {
+    showNextSentence(0);
+  }, []);
 
   return (
     <div className="detail-container">

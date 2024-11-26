@@ -1,18 +1,18 @@
 import Home from "./Home";
 import Intro from "./Intro";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const MainApp = () => {
   const [showIntro, setShowIntro] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowIntro(false);
-    }, 25000);
+  const handleIntroFinish = () => {
+    setShowIntro(false);
+  };
 
-    return () => clearTimeout(timer);
-  }, []);
-
-  return <div className="main">{showIntro ? <Intro /> : <Home />}</div>;
+  return (
+    <div className="main">
+      {showIntro ? <Intro onFinish={handleIntroFinish} /> : <Home />}
+    </div>
+  );
 };
 export default MainApp;
