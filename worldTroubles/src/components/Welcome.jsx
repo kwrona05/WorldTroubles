@@ -13,7 +13,7 @@ const WelcomeScreen = ({ onStart }) => {
       </h1>
       <button
         onClick={onStart}
-        style={{ border: "2px solid #4caf50", padding: "10px 80px" }}
+        style={{ border: "2px solid #ffc857", padding: "10px 80px" }}
       >
         Start
       </button>
