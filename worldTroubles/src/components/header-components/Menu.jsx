@@ -8,7 +8,7 @@ const MenuButton = styled.button`
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #ff6f59;
   color: white;
   border: none;
   border-radius: 4px;
@@ -16,7 +16,7 @@ const MenuButton = styled.button`
   margin-top: 15px;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #ff8a73;
   }
 `;
 
@@ -26,7 +26,7 @@ const Sidebar = styled.div`
   left: 0;
   height: 90vh;
   width: 250px;
-  background-color: #333;
+  background-color: #3b3a29;
   color: white;
   display: flex;
   flex-direction: column;
