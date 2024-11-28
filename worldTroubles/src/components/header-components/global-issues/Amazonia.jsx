@@ -1,11 +1,12 @@
+import React from "react";
 import BackHome from "../../BackHome";
 
 const Amazonia = () => {
   return (
     <div className="detail-container">
       <BackHome />
-      <h2>An attack on the lungs of the Earth</h2>
-      <div className="description">
+      <h2 data-testid="header">An attack on the lungs of the Earth</h2>
+      <div className="description" data-testId="description">
         <p>
           Deforestation of the Amazon is a serious ecological issue with global
           consequences. Known as the "Lungs of the Earth" the Amazon produces
