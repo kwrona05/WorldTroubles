@@ -28,7 +28,7 @@
   padding: 0 20px;
   height: 200px;
   width: 1400px;
-  background-color: #333;
+  background-color: #3B3A29;
   color: #fff;
   padding-top: 60px;
 }
@@ -41,7 +41,7 @@
 
 h1 {
   font-weight: bold;
-  color: #ff5722;
+  color: #FFC857;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   font-size: 2.5rem;
 }
@@ -70,7 +70,7 @@ h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ff5722;
+  color: #ffc857;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   margin-bottom: 30px;
 }
@@ -81,7 +81,7 @@ h2 {
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 2px solid #4caf50;
+  border: 2px solid #ffc857;
 }
 
 .description p {
@@ -104,4 +104,14 @@ h2 {
 
 .menu-app-container {
   height: 70px;
+  background-color: #3B3A29;
 }
+
+/* h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6f59;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+} */
