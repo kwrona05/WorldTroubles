@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { AboutButton, SocialMediaMenu, AboutList, ListItem } from "./MenuStyledComponents";
+import {
+  AboutButton,
+  SocialMediaMenu,
+  AboutList,
+  ListItem,
+} from "./MenuStyledComponents";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -31,7 +36,7 @@ const About = () => {
             </ListItem>
             <ListItem>
               <a
-                href="www.linkedin.com/in/kacper-wrona-842b662bb"
+                href="https://linkedin.com/in/kwronadev"
                 target="_blank"
                 rel="noopener noreferrer"
               >
