@@ -1,11 +1,12 @@
+import React from "react";
 import BackHome from "../../BackHome";
 
 const OzoneHole = () => {
   return (
     <div className="detail-container">
       <BackHome />
-      <h2>The weakest point of the earth</h2>
-      <div className="description">
+      <h2 data-testid="header3">The weakest point of the earth</h2>
+      <div className="description" data-testid="description3">
         <p>
           The ozone hole is an area in the stratosphere where the ozone layer is
           significantly depleted, primarily over Antarctica, though it also

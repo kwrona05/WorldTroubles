@@ -33,3 +33,56 @@ test("Description shouldn't be undefined", () => {
   const description = screen.getByTestId("description");
   expect(description).not.toBeUndefined();
 });
+
+//Bangladesh.jsx
+test("Header shouldn't be undefined", () => {
+  render(
+    <MemoryRouter>
+      <Bangladesh />
+    </MemoryRouter>
+  );
+  const header2 = screen.getByTestId("header2");
+  expect(header2).not.toBeUndefined();
+});
+
+test("Description shouldn't be undefined", () => {
+  render(
+    <MemoryRouter>
+      <Bangladesh />
+    </MemoryRouter>
+  );
+  const description2 = screen.getByTestId("description2");
+  expect(description2).not.toBeUndefined();
+});
+
+//OzoneHole.jsx
+test("Header shouldn't be undefined", () => {
+  render(
+    <MemoryRouter>
+      <OzoneHole />
+    </MemoryRouter>
+  );
+  const header3 = screen.getByTestId("header3");
+  expect(header3).not.toBeUndefined();
+});
+
+test("Description shouldn't be undefined", () => {
+  render(
+    <MemoryRouter>
+      <OzoneHole />
+    </MemoryRouter>
+  );
+  const description3 = screen.getByTestId("description3");
+  expect(description3).not.toBeUndefined();
+});
+
+//Pekin.jsx
+test("Header shouldn't be undefined", () => {
+  render(
+    <MemoryRouter>
+      <Pekin />
+    </MemoryRouter>
+  );
+  const header4 = screen.getByTestId("header4");
+  expect(header4).not.toBeUndefined();
+});
