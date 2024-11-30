@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="detail-container"
+  >
+    <div>
+      <button
+        class="sc-blHHSb QLlP"
+      >
+        Home page
+      </button>
+    </div>
+    <h2
+      data-testid="header"
+    >
+      An attack on the lungs of the Earth
+    </h2>
+    <div
+      class="description"
+      data-testid="description"
+    >
+      <p>
+        Deforestation of the Amazon is a serious ecological issue with global consequences. Known as the "Lungs of the Earth" the Amazon produces around 20% of the world's oxygen and is home to countless species of plants, animals, and indigenous communities. Unfortunately, deforestation in this region has been increasing over the years, primarily driven by logging for agricultural expansion (especially soy cultivation) and cattle ranching. This process accelerates climate change, as the trees of the Amazon absorb large amounts of carbon dioxide, which is released into the atmosphere when they are cut down. Deforestation leads to a loss of biodiversity, impacting many unique species that lose their natural habitats. In recent years, the rate of deforestation has surged, despite efforts by governments and environmental organizations to curb it through protective policies and sustainable resource management initiatives in the Amazon.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Matches snapshot 2`] = `
+<DocumentFragment>
+  <div
+    class="detail-container"
+  >
+    <div>
+      <button
+        class="sc-blHHSb QLlP"
+      >
+        Home page
+      </button>
+    </div>
+    <h2
+      data-testid="header2"
+    >
+      Bangladesh
+    </h2>
+    <div
+      class="description"
+      data-testid="description2"
+    >
+      <p>
+        Bangladesh faces significant challenges in accessing clean water, mainly due to pollution, overpopulation, and environmental factors. Rapid urbanization has led to contamination of both surface and groundwater sources. Rivers and water bodies are heavily polluted by industrial waste, agricultural runoff, and untreated sewage, which increases the risk of waterborne diseases among the population. Additionally, arsenic contamination in groundwater poses a serious health risk in many rural areas, where wells, a common water source, often contain dangerous levels of arsenic. Another problem is the country’s vulnerability to natural disasters, including floods and cyclones, which contaminate water supplies with saltwater and pollutants, especially in coastal regions. Climate change is exacerbating these issues, increasing both the frequency and severity of these natural events, and leading to more extensive salinization of freshwater sources. Efforts are being made to address these issues, such as developing arsenic-free wells and desalination plants, but challenges remain due to limited resources and infrastructure.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Matches snapshot 3`] = `
+<DocumentFragment>
+  <div
+    class="detail-container"
+  >
+    <div>
+      <button
+        class="sc-blHHSb QLlP"
+      >
+        Home page
+      </button>
+    </div>
+    <h2
+      data-testid="header3"
+    >
+      The weakest point of the earth
+    </h2>
+    <div
+      class="description"
+      data-testid="description3"
+    >
+      <p>
+        The ozone hole is an area in the stratosphere where the ozone layer is significantly depleted, primarily over Antarctica, though it also occurs over the Arctic and in other areas. Ozone in the stratosphere serves as a shield, protecting life on Earth from harmful ultraviolet (UV) radiation, which can lead to health issues such as skin cancer and eye damage. The ozone hole was caused by the release of substances like chlorofluorocarbons (CFCs), which break down ozone molecules. Although international agreements such as the 1987 Montreal Protocol have significantly reduced CFC emissions, the recovery of the ozone layer is slow and may take several decades.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Matches snapshot 4`] = `
+<DocumentFragment>
+  <div
+    class="detail-container"
+  >
+    <div>
+      <button
+        class="sc-blHHSb QLlP"
+      >
+        Home page
+      </button>
+    </div>
+    <h2
+      data-testid="header4"
+    >
+      Invisible poison
+    </h2>
+    <div
+      class="description"
+      data-testid="description4"
+    >
+      <p>
+        Wyszukano 4 witryny Air pollution in Beijing has been a significant environmental issue for years, largely due to the city's rapid industrialization, high vehicle emissions, and dependence on coal for heating, especially during winter. Over the past decade, the city has made considerable progress in reducing pollution levels through various initiatives. These include replacing coal with cleaner energy sources, restricting vehicle growth, and relocating heavy industries. Afforestation projects have also reduced the frequency of sandstorms, once common in Beijing. Despite these efforts, the city continues to struggle with pollution. For instance, in October 2024, Beijing faced its worst air pollution in over five months, with particulate matter (PM2.5) levels rising sharply. This pollution is primarily attributed to industrial activities and vehicle emissions, exacerbated by unfavorable weather conditions. Though air quality has improved since 2013, Beijing's annual average PM2.5 levels still exceed the World Health Organization's recommendations. Beijing's government has also implemented measures such as driving bans, license plate lotteries, and restrictions on older vehicles to reduce pollution. However, challenges remain, particularly due to the economic growth that often conflicts with environmental goals
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Matches snapshot 5`] = `
+<DocumentFragment>
+  <div
+    class="detail-container"
+  >
+    <div>
+      <button
+        class="sc-blHHSb QLlP"
+      >
+        Home page
+      </button>
+    </div>
+    <h2
+      data-testid="header5"
+    >
+      South Africa
+    </h2>
+    <div
+      class="description"
+      data-testid="description5"
+    >
+      <p>
+        South Africa is facing a severe water crisis, driven by a combination of factors including climate change, population growth, and poor infrastructure management. The country has long struggled with water scarcity, receiving much lower than average rainfall compared to global standards. Moreover, periods of drought, like the one from 2015 to 2018, severely depleted water resources and affected the nation's reservoirs. Despite some recent rains, regions like the Eastern Cape are still suffering from water shortages, with reservoirs operating well below capacity. In urban areas like Johannesburg, the situation has become increasingly dire. Crumbling infrastructure, particularly leaking pipes and non-functioning water systems, has exacerbated the problem. Some areas have experienced "watershedding" (similar to power outages), where water supply is cut off for extended periods. This has led to the widespread use of water tankers, though they are insufficient to meet demand. Additionally, poor maintenance, pollution, and high water usage contribute to the ongoing crisis. The government and local communities are struggling to find long-term solutions, while the population continues to endure increasing hardships from the water scarcity.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Matches snapshot 6`] = `
+<DocumentFragment>
+  <div
+    class="detail-container"
+  >
+    <div>
+      <button
+        class="sc-blHHSb QLlP"
+      >
+        Home page
+      </button>
+    </div>
+    <h2
+      data-testid="header6"
+    >
+      Horror in Valencia
+    </h2>
+    <div
+      class="description"
+      data-testid="description6"
+    >
+      <p>
+        In late October 2024, Valencia in Spain experienced a devastating flood, which has been recognized as one of the most significant natural disasters in the region's history. Rainfall during this period reached an annual level within just a few hours, leading to the overflow of rivers such as the Rambla del Poyo. The disaster particularly impacted the cities of Paiporta, Alfafar, and Chiva. Tragically, over 150 people lost their lives, with many more injured or reported missing. Additionally, more than 100,000 people were left without power. Satellite images published by the European Space Agency (ESA) capture the extent of the flooding, which you can view 
+        <a
+          href="https://www.esa.int/ESA_Multimedia/Images/2024/10/Valencia_flood_disaster
+"
+        >
+          here
+        </a>
+        . Citizens criticized the authorities' response, especially highlighting delayed public warnings, which left little time for proper preparation for the impending danger.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Matches snapshot 7`] = `
+<DocumentFragment>
+  <div
+    class="detail-container"
+  >
+    <div>
+      <button
+        class="sc-blHHSb QLlP"
+      >
+        Home page
+      </button>
+    </div>
+    <h2
+      data-testid="header7"
+    >
+      The 13 Years' War
+    </h2>
+    <div
+      class="description"
+      data-testid="description7"
+    >
+      <p>
+        The Syrian Civil War, which began in 2011, has resulted in one of the most devastating and prolonged conflicts of the 21st century. Initially sparked by pro-democracy protests against President Bashar al-Assad's authoritarian regime, the violence quickly escalated into a full-blown civil war. The conflict involves multiple factions, including the Syrian government, opposition groups, Kurdish forces, and extremist organizations like ISIS. International powers, such as Russia and Iran, have supported Assad, while the U.S. and Turkey have backed various opposition groups, further complicating the situation. The war has caused massive loss of life, with hundreds of thousands of deaths and millions of people displaced, both internally and as refugees abroad. The conflict has also devastated the country's infrastructure, economy, and social fabric. Attempts at peace talks have largely failed, and the war continues to have severe humanitarian consequences, with many parts of the country still under siege or affected by sporadic violence. Syrian Civil War remains a complex and deeply entrenched conflict, involving a combination of local, regional, and global interests.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Matches snapshot 8`] = `
+<DocumentFragment>
+  <div
+    class="detail-container"
+  >
+    <div>
+      <button
+        class="sc-blHHSb QLlP"
+      >
+        Home page
+      </button>
+    </div>
+    <h2
+      data-testid="header8"
+    >
+      War in Ukraine
+    </h2>
+    <div
+      class="description"
+      data-testid="description8"
+    >
+      <p>
+        The war in Ukraine began in February 2022, when Russia launched a large-scale invasion of Ukraine, escalating the ongoing conflict that had started in 2014 with Russia's annexation of Crimea and its support for separatist groups in eastern Ukraine. The 2022 invasion led to widespread fighting across the country, including the siege of major cities like Kyiv, Mariupol, and Kharkiv. The war has resulted in significant loss of life, extensive damage to infrastructure, and millions of displaced people, both within Ukraine and abroad. Ukraine has received extensive military and humanitarian support from Western countries, while Russia has faced international sanctions. Despite initial Russian advances, Ukraine's resistance and counteroffensives have led to significant territorial recoveries, but the war remains ongoing with no clear resolution in sight. The conflict has profound geopolitical implications, with NATO and the European Union backing Ukraine, while Russia faces increasing isolation. The humanitarian crisis continues to worsen, as millions struggle with displacement and the destruction of homes and cities.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
