@@ -1,5 +1,12 @@
+import React from "react";
 import { useState } from "react";
-import { ReadButton, DetailMenu, IssuesList, CountryItem, StyledLink } from "./MenuStyledComponents";
+import {
+  ReadButton,
+  DetailMenu,
+  IssuesList,
+  CountryItem,
+  StyledLink,
+} from "./MenuStyledComponents";
 
 const ReadMore = () => {
   const [isOpen, setIsOpen] = useState(false);

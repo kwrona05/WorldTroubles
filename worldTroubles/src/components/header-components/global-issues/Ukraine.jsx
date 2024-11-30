@@ -1,11 +1,12 @@
+import React from "react";
 import BackHome from "../../BackHome";
 
 const Ukraine = () => {
   return (
     <div className="detail-container">
       <BackHome />
-      <h2>War in Ukraine</h2>
-      <div className="description">
+      <h2 data-testid="header8">War in Ukraine</h2>
+      <div className="description" data-testid="description8">
         <p>
           The war in Ukraine began in February 2022, when Russia launched a
           large-scale invasion of Ukraine, escalating the ongoing conflict that

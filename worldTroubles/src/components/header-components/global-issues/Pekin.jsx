@@ -6,7 +6,7 @@ const Pekin = () => {
     <div className="detail-container">
       <BackHome />
       <h2 data-testid="header4">Invisible poison</h2>
-      <div className="description">
+      <div className="description" data-testid="description4">
         <p>
           Wyszukano 4 witryny Air pollution in Beijing has been a significant
           environmental issue for years, largely due to the city's rapid

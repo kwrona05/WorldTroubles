@@ -1,11 +1,12 @@
+import React from "react";
 import BackHome from "../../BackHome";
 
 const Syria = () => {
   return (
     <div className="detail-container">
       <BackHome />
-      <h2>The 13 Years' War</h2>
-      <div className="description">
+      <h2 data-testid="header7">The 13 Years' War</h2>
+      <div className="description" data-testid="description7">
         <p>
           The Syrian Civil War, which began in 2011, has resulted in one of the
           most devastating and prolonged conflicts of the 21st century.
