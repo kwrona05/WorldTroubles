@@ -1,11 +1,12 @@
+import React from "react";
 import BackHome from "../../BackHome";
 
 const Bangladesh = () => {
   return (
     <div className="detail-container">
       <BackHome />
-      <h2>Bangladesh</h2>
-      <div className="description">
+      <h2 data-testid="header2">Bangladesh</h2>
+      <div className="description" data-testid="description2">
         <p>
           Bangladesh faces significant challenges in accessing clean water,
           mainly due to pollution, overpopulation, and environmental factors.

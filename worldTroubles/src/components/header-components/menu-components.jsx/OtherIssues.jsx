@@ -1,5 +1,12 @@
+import React from "react";
 import { useState } from "react";
-import { OtherButton, OtherMenu, OtherItem, OtherList, StyledLink } from "./MenuStyledComponents";
+import {
+  OtherButton,
+  OtherMenu,
+  OtherItem,
+  OtherList,
+  StyledLink,
+} from "./MenuStyledComponents";
 
 const OtherIssues = () => {
   const [isOpen, setIsOpen] = useState(false);

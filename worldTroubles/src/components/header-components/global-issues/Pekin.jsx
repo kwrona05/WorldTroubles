@@ -1,11 +1,12 @@
+import React from "react";
 import BackHome from "../../BackHome";
 
 const Pekin = () => {
   return (
     <div className="detail-container">
       <BackHome />
-      <h2>Invisible poison</h2>
-      <div className="description">
+      <h2 data-testid="header4">Invisible poison</h2>
+      <div className="description" data-testid="description4">
         <p>
           Wyszukano 4 witryny Air pollution in Beijing has been a significant
           environmental issue for years, largely due to the city's rapid

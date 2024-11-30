@@ -1,11 +1,12 @@
+import React from "react";
 import BackHome from "../../BackHome";
 
 const SouthAfrica = () => {
   return (
     <div className="detail-container">
       <BackHome />
-      <h2>South Africa</h2>
-      <div className="description">
+      <h2 data-testid="header5">South Africa</h2>
+      <div className="description" data-testid="description5">
         <p>
           South Africa is facing a severe water crisis, driven by a combination
           of factors including climate change, population growth, and poor

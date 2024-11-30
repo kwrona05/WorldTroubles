@@ -39,9 +39,11 @@ const Intro = ({ onFinish }) => {
 
   return (
     <div className="typing-div">
-      <h2>
+      <h2 data-testid="intro-header">
         {currentText}
-        <span className="cursor">|</span>
+        <span className="cursor" data-testid="cursor">
+          |
+        </span>
       </h2>
     </div>
   );

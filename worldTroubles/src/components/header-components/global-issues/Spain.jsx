@@ -1,11 +1,12 @@
+import React from "react";
 import BackHome from "../../BackHome";
 
 const Spain = () => {
   return (
     <div className="detail-container">
       <BackHome />
-      <h2>Horror in Valencia</h2>
-      <div className="description">
+      <h2 data-testid="header6">Horror in Valencia</h2>
+      <div className="description" data-testid="description6">
         <p>
           In late October 2024, Valencia in Spain experienced a devastating
           flood, which has been recognized as one of the most significant

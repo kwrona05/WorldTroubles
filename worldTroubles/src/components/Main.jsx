@@ -1,3 +1,4 @@
+import React from "react";
 import Home from "./Home";
 import Intro from "./Intro";
 import { useState } from "react";
@@ -10,7 +11,7 @@ const MainApp = () => {
   };
 
   return (
-    <div className="main">
+    <div className="main" data-testid="main">
       {showIntro ? <Intro onFinish={handleIntroFinish} /> : <Home />}
     </div>
   );

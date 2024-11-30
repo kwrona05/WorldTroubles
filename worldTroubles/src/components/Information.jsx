@@ -1,24 +1,5 @@
 import { useState, useEffect } from "react";
-// import styled from "styled-components";
 import { InfoContainer } from "./ComponentsStyledComponents";
-
-// const InfoContainer = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: 24px;
-//   padding: 20px;
-//   color: #ffffff;
-//   transition: color 0.3s;
-//   width: 300px;
-//   word-wrap: break-word;
-//   overflow-wrap: break-word;
-//   text-align: center;
-//   background-color: #1f1f1f;
-//   border-radius: 10px;
-//   border: 2px solid #4caf50;
-//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-// `;
 
 const Information = () => {
   const infoItems = [
