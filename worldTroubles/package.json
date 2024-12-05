@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "commonjs",
-  "homepage": "https://kwrona05.github.io/WorldTroubles/",
+  "homepage": "https://kwrona05.github.io/WorldTroubles/worldTroubles",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
