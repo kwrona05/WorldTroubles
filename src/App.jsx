@@ -5,7 +5,7 @@ import {
   Route,
   useNavigate,
 } from "react-router-dom";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Home from "./components/Home";
 import Ukraine from "./components/header-components/global-issues/Ukraine";
 import Spain from "./components/header-components/global-issues/Spain";
@@ -52,7 +52,7 @@ const AppContent = () => {
     <>
       <audio
         ref={audioRef}
-        src="/intro.mp3"
+        src="intro.mp3"
         loop
         preload="auto"
         style={{ display: "none" }}

@@ -1,6 +1,7 @@
 import AppHeader from "./Header";
 import Globe from "./Globe";
 import Information from "./Information";
+import React from "react";
 
 const Home = () => {
   return (

@@ -1,3 +1,4 @@
+import React from "react";
 const WelcomeScreen = ({ onStart }) => {
   return (
     <div

@@ -1,4 +1,5 @@
 import BackHome from "../../BackHome";
+import React from "react";
 
 const Hunger = () => {
   return (
